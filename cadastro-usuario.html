@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IChan conecta ESG - Cadastro de Cidadão</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="index.html" class="logo">IChan <span>conecta ESG - DF</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FORMULÁRIO DE CADASTRO DO CIDADÃO -->
+    <main class="container">
+        <div class="form-box">
+            <h2 style="text-align: center; color: #047857; margin-bottom: 1.2rem;">Cadastro de Cidadão</h2>
+            
+            <form action="login.html" method="GET">
+                
+                <!-- Nome Completo -->
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                </div>
+
+                <!-- Seleção exclusiva das Regiões Administrativas do Distrito Federal -->
+                <div class="form-group">
+                    <label for="regiao">Região Administrativa (DF):</label>
+                    <select id="regiao" required>
+                        <option value="">Selecione sua cidade/RA</option>
+                        <option value="plano-piloto">Plano Piloto (Asa Sul/Norte)</option>
+                        <option value="taguatinga">Taguatinga</option>
+                        <option value="ceilandia">Ceilândia</option>
+                        <option value="samambaia">Samambaia</option>
+                        <option value="aguas-claras">Águas Claras</option>
+                        <option value="sobradinho">Sobradinho</option>
+                        <option value="planaltina">Planaltina</option>
+                        <option value="gama">Gama</option>
+                        <option value="outra">Outra Região do DF</option>
+                    </select>
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <!-- Senha -->
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Crie uma senha" required>
+                </div>
+
+                <!-- Botão de Conclusão -->
+                <button type="submit" class="btn-primary">Concluir Cadastro</button>
+            </form>
+
+            <!-- Link para voltar ao Login -->
+            <div class="links-auxiliares">
+                <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>IChan conecta ESG &copy; 2026 - Distrito Federal</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* ============================================================
+   PROJETO: IChan conecta ESG - Distrito Federal
+   ARQUIVO: style.css (Estilos Globais do Sistema)
+   ============================================================ */
+
+/* 1. RESET E CONFIGURAÇÕES GERAIS */
+/* Remove margens padrão e define a fonte padrão do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Define a cor de fundo geral da página e a cor padrão do texto */
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* 2. CABEÇALHO E MENU DE NAVEGAÇÃO */
+/* Barra superior fixa com fundo verde sustentável */
+header {
+    background-color: #047857;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo do logotipo do site */
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #34d399; /* Detalhe em verde claro */
+}
+
+/* Lista de links do menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Links de navegação */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #a7f3d0;
+}
+
+/* Botão em destaque dentro do menu */
+.btn-nav {
+    background-color: #059669;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #34d399;
+}
+
+/* 3. SEÇÃO DE DESTAQUE (HERO SECTION) */
+/* Bloco principal de impacto na página inicial */
+.hero {
+    background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+    color: white;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    color: #d1fae5;
+}
+
+/* 4. LAYOUT E CONTAINERS */
+/* Centraliza o conteúdo principal da página */
+.container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Títulos das seções */
+.titulo-secao {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #065f46;
+    margin-bottom: 1.5rem;
+}
+
+/* Sistemas de Grade (Grid) responsivos */
+.grid-3, .grid-4 {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Estilo dos Cards (Blocos de conteúdo) */
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.card h3 {
+    color: #047857;
+    margin-bottom: 0.6rem;
+}
+
+/* 5. FORMULÁRIOS DE CADASTRO E LOGIN */
+/* Caixa centralizada para os formulários */
+.form-box {
+    background: white;
+    max-width: 450px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Campos de texto, senha e seletores (Select) */
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+}
+
+/* Botão principal de ação */
+.btn-primary {
+    background-color: #10b981;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+}
+
+/* Links auxiliares abaixo dos formulários */
+.links-auxiliares {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.links-auxiliares a {
+    color: #047857;
+    text-decoration: none;
+}
+
+.links-auxiliares a:hover {
+    text-decoration: underline;
+}
+
+/* 6. RODAPÉ */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+}

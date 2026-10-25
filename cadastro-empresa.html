@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IChan conecta ESG - Cadastro de Empresas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="index.html" class="logo">IChan <span>conecta ESG - DF</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FORMULÁRIO DE CADASTRO DE EMPRESAS -->
+    <main class="container">
+        <div class="form-box">
+            <h2 style="text-align: center; color: #047857; margin-bottom: 1.2rem;">Cadastro de Empresas (ESG)</h2>
+            
+            <form action="login.html" method="GET">
+                
+                <!-- Razão Social -->
+                <div class="form-group">
+                    <label for="empresa">Razão Social / Nome da Empresa:</label>
+                    <input type="text" id="empresa" placeholder="Nome da Empresa Ltda" required>
+                </div>
+
+                <!-- CNPJ -->
+                <div class="form-group">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" placeholder="00.000.000/0001-00" required>
+                </div>
+
+                <!-- Seleção de Foco de Atuação nos 7 Pilares ESG -->
+                <div class="form-group">
+                    <label for="atuacao">Foco de Atuação nos Pilares:</label>
+                    <select id="atuacao" required>
+                        <option value="">Selecione o pilar principal</option>
+                        <option value="arquitetura">Arquitetura</option>
+                        <option value="seguranca">Segurança</option>
+                        <option value="mobilidade">Mobilidade</option>
+                        <option value="cultura">Cultura</option>
+                        <option value="educacao">Educação</option>
+                        <option value="sustentabilidade">Sustentabilidade</option>
+                        <option value="saude">Saúde</option>
+                    </select>
+                </div>
+
+                <!-- E-mail Corporativo -->
+                <div class="form-group">
+                    <label for="email">E-mail Corporativo:</label>
+                    <input type="email" id="email" placeholder="contato@empresa.com" required>
+                </div>
+
+                <!-- Senha -->
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Crie uma senha" required>
+                </div>
+
+                <!-- Botão de Registro -->
+                <button type="submit" class="btn-primary">Registrar Empresa</button>
+            </form>
+
+            <!-- Link para voltar ao Login -->
+            <div class="links-auxiliares">
+                <p>Já possui conta empresarial? <a href="login.html">Faça login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>IChan conecta ESG &copy; 2026 - Distrito Federal</p>
+    </footer>
+
+</body>
+</html>
